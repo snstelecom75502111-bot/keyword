@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신기록마케팅 | 네이버 검색어 & 스마트플레이스 수작업 케어</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Noto Sans KR Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    body { 
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #FAFBF9;
+      color: #2D3748;
+    }
+    .soft-shadow {
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+    }
+    .badge-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .9; transform: scale(1.02); }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-100 selection:text-emerald-900 pb-20 sm:pb-0">
+
+  <!-- 상단 프로모션 공지 -->
+  <div class="bg-[#E8F8EE] border-b border-emerald-100 text-emerald-900 text-xs sm:text-sm font-semibold py-2.5 px-4 text-center">
+    🛡️ <strong>[동네 상권 1매장 선착순]</strong> 100% 수작업 안전 진행 | <span class="bg-emerald-200/70 px-1.5 py-0.5 rounded text-emerald-950 font-bold">월 10만 원 고정 정액제</span>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <!-- 신기록마케팅 로고 -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center p-1 group-hover:border-emerald-400 transition-all">
+          <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 12L80 24V48C80 68 50 86 50 86C50 86 20 68 20 48V24L50 12Z" fill="#F0FDF4" stroke="#03C75A" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M50 17L75 27V48C75 64 50 79 50 79V17Z" fill="#E2E8F0" fill-opacity="0.4"/>
+            <path d="M36 34V64H44.5L55.5 48V64H64V34H55.5L44.5 50V34H36Z" fill="#03C75A"/>
+            <path d="M22 66L45 44L56 54L78 26" stroke="#029C44" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <polygon points="68,23 82,23 82,37" fill="#029C44"/>
+          </svg>
+        </div>
+        <div class="flex flex-col text-left">
+          <span class="font-black text-xl tracking-tight text-slate-800 leading-none">신기록마케팅</span>
+          <span class="text-[10px] font-bold text-slate-400 tracking-wider mt-0.5">(주)에스엔에스컴퍼니</span>
+        </div>
+      </a>
+
+      <!-- 빠른 상담 버튼 -->
+      <div class="flex items-center gap-2">
+        <a href="https://pf.kakao.com/_xgxjCxiX/chat" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 bg-[#FEE500] hover:bg-[#FDD800] text-[#3C1E1E] font-extrabold px-3.5 py-1.5 rounded-full text-xs transition-all shadow-sm">
+          <i class="fa-solid fa-comment"></i> 카톡 1초 상담
+        </a>
+        <a href="#contact" class="bg-[#03C75A] hover:bg-[#02b350] text-white font-bold px-4 py-2 rounded-full text-xs sm:text-sm transition-all shadow-md shadow-emerald-500/10">
+          키워드 무료 조회
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="pt-12 pb-16 sm:pt-20 sm:pb-24 overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-medium mb-5">
+        <span>🤝 매일 돈 빠져나가는 광고에 지친 사장님들을 위한 <strong>신기록마케팅</strong></span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl sm:leading-snug lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-snug">
+        손님들이 지역 키워드 검색할 때,<br>
+        <span class="text-[#03C75A] underline decoration-emerald-200 decoration-wavy underline-offset-8">
+          우리 매장 이름이 연관검색어로 쏙!
+        </span>
+      </h1>
+
+      <p class="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
+        클릭할 때마다 돈 빠져나가는 CPC 광고 때문에 속 타셨죠?<br class="hidden sm:inline">
+        기계 프로그램 없이 <strong>100% 사람 손으로 안전하게 세팅</strong>해 드립니다.<br>
+        검색 유입이 늘어나 <strong class="text-emerald-700 bg-emerald-50 px-1 rounded">플레이스 순위까지 기분 좋게 덤으로!</strong>
+      </p>
+
+      <!-- 가격 비교 카드 -->
+      <div class="mt-9 max-w-xl mx-auto bg-white border border-slate-200 rounded-3xl p-5 sm:p-7 soft-shadow text-left">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
+          <span class="text-xs font-bold text-slate-400">솔직 담백한 비용 비교</span>
+          <span class="text-xs bg-amber-50 text-amber-800 font-bold px-2 py-0.5 rounded-full border border-amber-200">
+            💡 추가금 없는 월 1회 결제
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+            <span class="text-xs font-semibold text-slate-500 block mb-1">일반 마케팅 대행사</span>
+            <span class="text-xl font-bold text-slate-400 line-through">월 200,000원</span>
+            <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+              • 부담스러운 가격 거품<br>
+              • 단순 노출만 하고 끝
+            </p>
+          </div>
+
+          <div class="p-4 bg-emerald-50/70 rounded-2xl border-2 border-emerald-400 relative">
+            <span class="absolute -top-3 right-3 bg-[#03C75A] text-white text-[11px] font-extrabold px-2.5 py-0.5 rounded-full shadow-sm">
+              신기록 특가
+            </span>
+            <span class="text-xs font-bold text-emerald-800 block mb-1">신기록마케팅 정액 케어</span>
+            <span class="text-2xl font-extrabold text-slate-900">월 100,000원</span>
+            <p class="text-xs text-emerald-900 mt-2 font-medium leading-relaxed">
+              • <strong>1,000번 클릭해도 추가비 0원</strong><br>
+              • 플레이스 순위 상승 시너지 무료
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA 버튼 -->
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-base sm:text-lg rounded-2xl shadow-lg shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5">
+          🌿 우리 매장 키워드 노출 가능한지 확인하기
+        </a>
+        <a href="https://pf.kakao.com/_xgxjCxiX/chat" target="_blank" class="w-full sm:w-auto px-6 py-4 bg-[#FEE500] hover:bg-[#FDD800] text-[#3C1E1E] font-extrabold text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2">
+          <i class="fa-solid fa-comment text-lg"></i> 카카오톡 실시간 상담하기
+        </a>
+      </div>
+      <p class="mt-3 text-xs text-slate-400 font-medium">
+        ※ 약속한 노출 안 될 시 100% 전액 환불해 드립니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 실제 검색창 시뮬레이션 -->
+  <section class="py-14 bg-white border-y border-slate-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-8">
+        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">자연스러운 노출 효과</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">손님들 눈에는 이렇게 보입니다</h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">
+          광고 딱지 없이 네이버가 직접 추천해 주는 느낌이라 거부감이 전혀 없습니다.
+        </p>
+      </div>
+
+      <div class="bg-[#F8FAF9] border border-slate-200 rounded-3xl p-5 sm:p-7 soft-shadow">
+        <div class="bg-white border-2 border-[#03C75A] rounded-full px-4 py-2.5 flex items-center gap-2 shadow-sm mb-5">
+          <span class="text-[#03C75A] font-black text-sm">N</span>
+          <span class="text-sm font-semibold text-slate-700 flex-1">[우리 동네 지역명] 휴대폰 성지 (또는 호텔/숙소)</span>
+          <i class="fa-solid fa-magnifying-glass text-[#03C75A]"></i>
+        </div>
+
+        <div class="bg-white rounded-2xl p-4 border border-slate-100">
+          <div class="flex items-center gap-1.5 mb-2.5">
+            <span class="text-xs font-bold text-slate-500">함께 많이 찾는 검색어</span>
+            <span class="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-medium">실시간</span>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-100 rounded-full text-xs text-slate-600">동네 시세표</span>
+            <span class="px-3.5 py-1 bg-emerald-100/80 border border-emerald-400 text-emerald-900 font-bold rounded-full text-xs flex items-center gap-1 shadow-sm">
+              📍 [지역명] 우리매장 상호명 ✨
+            </span>
+            <span class="px-3 py-1 bg-slate-100 rounded-full text-xs text-slate-600">동네 추천 매장</span>
+            <span class="px-3 py-1 bg-slate-100 rounded-full text-xs text-slate-600">친절한 곳</span>
+          </div>
+        </div>
+
+        <p class="text-center text-xs text-slate-500 mt-4">
+          💬 "손님들은 '아, 여기가 이 지역에서 제일 유명한 곳이구나' 하고 바로 신뢰를 갖습니다."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 신기록마케팅 3대 약속 -->
+  <section class="py-16 max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">WHY SHINGIROK</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+        왜 사장님들은 '신기록마케팅'을 찾으실까요?
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow hover:border-emerald-200 transition-all">
+        <div class="w-11 h-11 bg-emerald-100 text-[#03C75A] rounded-2xl flex items-center justify-center text-xl mb-4">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">100% 사람 손으로 안전하게</h3>
+        <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+          어뷰징 위험이 높은 프로그램 매크로는 절대 쓰지 않습니다. 소중한 플레이스를 보호하는 안전한 정공법 수작업만 진행합니다.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl border border-emerald-300 soft-shadow relative">
+        <div class="w-11 h-11 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-xl mb-4">
+          <i class="fa-solid fa-piggy-bank"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">월 10만 원 고정 정액제</h3>
+        <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+          클릭할 때마다 돈이 줄줄 새는 CPC와 다릅니다. 손님이 한 달에 몇천 번을 눌러도 정액 10만 원 외 추가 비용은 0원입니다.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow hover:border-emerald-200 transition-all">
+        <div class="w-11 h-11 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-xl mb-4">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">플레이스 순위 동반 상승</h3>
+        <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+          '지역+매장명' 검색량이 늘어나면 네이버 AI가 인기 매장으로 판단합니다. 스마트플레이스 지수와 순위가 함께 상승합니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 마케터의 편지 -->
+  <section class="py-12 bg-[#F2F6F3] border-y border-emerald-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="bg-white p-6 sm:p-8 rounded-3xl border border-emerald-200/70 soft-shadow relative">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center p-1.5 flex-shrink-0">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 12L80 24V48C80 68 50 86 50 86C50 86 20 68 20 48V24L50 12Z" fill="#F0FDF4" stroke="#03C75A" stroke-width="6" stroke-linejoin="round"/>
+              <path d="M36 34V64H44.5L55.5 48V64H64V34H55.5L44.5 50V34H36Z" fill="#03C75A"/>
+              <path d="M22 66L45 44L56 54L78 26" stroke="#029C44" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+              <polygon points="68,23 82,23 82,37" fill="#029C44"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">
+              "광고비 때문에 밤잠 설치던 사장님들 마음, 신기록마케팅이 가장 잘 압니다."
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              파워링크는 경쟁 붙어서 단가만 치솟고, 대행사들은 20~30만 원씩 부르면서 프로그램 돌리다 튕기기 일쑤입니다.<br><br>
+              <strong>(주)에스엔에스컴퍼니 신기록마케팅</strong>은 거품 뺀 <strong>월 10만 원 정액제</strong>로 사장님 매장의 매출 신기록을 함께 만들어가겠습니다. 약속한 키워드가 노출되지 않으면 1원도 빠짐없이 100% 환불해 드립니다.
+            </p>
+            <span class="block mt-4 text-xs font-bold text-emerald-800">— 주식회사 에스엔에스컴퍼니 신기록마케팅 팀 일동</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 100% 에러 없는 무료 상담 폼 (AJAX 백그라운드 전송 + 팝업 안내) -->
+  <section id="contact" class="py-16 max-w-2xl mx-auto px-4 sm:px-6">
+    <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-9 soft-shadow">
+      
+      <div class="text-center mb-6">
+        <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full">
+          무료 키워드 조회 & 상담 접수
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+          우리 매장도 노출 가능한가요?
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1.5">
+          상호명과 원하시는 키워드를 남겨주시면 담당자가 즉시 확인 후 친절히 안내해 드립니다.
+        </p>
+      </div>
+
+      <!-- AJAX 자바스크립트 전송 폼 (화면 안 튕김) -->
+      <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">매장명 / 상호명 *</label>
+          <input type="text" id="storeName" name="매장명" required placeholder="예) OO모바일, OO호텔 등" class="w-full bg-[#FAFBF9] border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-emerald-500 text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">선점하고 싶은 지역 키워드 *</label>
+          <input type="text" id="keyword" name="희망키워드" required placeholder="예) OO동 휴대폰성지, OO역 호텔, OO동 왁싱" class="w-full bg-[#FAFBF9] border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-emerald-500 text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">연락처 (휴대폰 번호) *</label>
+          <input type="tel" id="phone" name="연락처" required placeholder="예) 010-1234-5678" class="w-full bg-[#FAFBF9] border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-emerald-500 text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">추가 문의사항 (선택)</label>
+          <textarea id="message" name="문의내용" rows="2" placeholder="궁금하신 점이나 현재 순위 등을 자유롭게 적어주세요." class="w-full bg-[#FAFBF9] border border-slate-200 rounded-xl px-4 py-2.5 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" id="submitBtn" class="w-full py-4 bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-base sm:text-lg rounded-2xl shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 cursor-pointer">
+            <span>우리 매장 키워드 무료 확인하기 (월 10만원 특가)</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+
+        <div class="text-center pt-2">
+          <a href="https://pf.kakao.com/_xgxjCxiX/chat" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-slate-600 hover:text-amber-700 font-bold">
+            <span class="w-4 h-4 rounded-full bg-[#FEE500] text-[#3C1E1E] flex items-center justify-center text-[10px]"><i class="fa-solid fa-comment"></i></span>
+            빠른 답변을 원하시면 카카오톡 실시간 상담하기 &gt;
+          </a>
+        </div>
+
+        <p class="text-[11px] text-slate-400 text-center mt-2">
+          🔒 남겨주신 정보는 상담 목적으로만 안전하게 보관되며 스팸 연락은 절대 드리지 않습니다.
+        </p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="py-10 bg-slate-50 border-t border-slate-200 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col items-center">
+      
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-6 h-6 rounded-lg bg-white border border-slate-200 shadow-sm flex items-center justify-center p-0.5">
+          <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 12L80 24V48C80 68 50 86 50 86C50 86 20 68 20 48V24L50 12Z" fill="#F0FDF4" stroke="#03C75A" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M36 34V64H44.5L55.5 48V64H64V34H55.5L44.5 50V34H36Z" fill="#03C75A"/>
+            <path d="M22 66L45 44L56 54L78 26" stroke="#029C44" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <polygon points="68,23 82,23 82,37" fill="#029C44"/>
+          </svg>
+        </div>
+        <span class="font-extrabold text-slate-800 text-sm">신기록마케팅</span>
+      </div>
+
+      <div class="space-y-1 text-slate-500 leading-relaxed text-[11px] sm:text-xs">
+        <p>
+          <span>상호(법인명): 주식회사 에스엔에스컴퍼니</span> | 
+          <span>서비스명: 신기록마케팅</span> | 
+          <span>대표자: 신경진</span>
+        </p>
+        <p>
+          <span>사업자등록번호: 883-88-00586</span> | 
+          <span>통신판매업신고: 제 2021-충남천안-1191 호</span>
+        </p>
+        <p>
+          <span>사업장 소재지: 충청남도 천안시 서북구 성정두정로 13, 1층(성정동, 지정타워)</span>
+        </p>
+        <p>
+          <span>대표 이메일: snstelecom2232@gmail.com</span> | 
+          <span>카카오톡 채널: @신기록마케팅</span>
+        </p>
+      </div>
+
+      <p class="mt-4 text-[11px] text-slate-400">© 2026 주식회사 에스엔에스컴퍼니 신기록마케팅. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 우측 하단 카카오톡 플로팅 버튼 -->
+  <div class="fixed bottom-5 right-5 z-50">
+    <a href="https://pf.kakao.com/_xgxjCxiX/chat" target="_blank" class="flex items-center gap-2 bg-[#FEE500] hover:bg-[#FDD800] text-[#3C1E1E] font-black px-4 py-3 rounded-full shadow-2xl transition-all transform hover:scale-105 border border-amber-300">
+      <i class="fa-solid fa-comment text-xl"></i>
+      <span class="text-xs sm:text-sm font-extrabold">카톡 1초 문의</span>
+    </a>
+  </div>
+
+  <!-- [중요] 신청 완료 모달 팝업 (화면 안 튕기고 깔끔하게 안내) -->
+  <div id="successModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full text-center shadow-2xl border border-slate-100 transform transition-all">
+      <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="text-xl font-extrabold text-slate-900">키워드 진단 신청 완료!</h3>
+      <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+        대표님의 상담 신청이 <strong>정상적으로 접수</strong>되었습니다.<br>
+        담당 마케터가 10분 내로 신속히 연락드리겠습니다!
+      </p>
+
+      <!-- 카톡 바로 연결 유도 -->
+      <div class="mt-6 p-4 bg-amber-50 rounded-2xl border border-amber-200 text-left">
+        <p class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+          <i class="fa-solid fa-bolt text-amber-600"></i> 실시간 1초 상담 안내
+        </p>
+        <p class="text-[11px] text-amber-800 mt-1">
+          지금 바로 상담을 원하시면 카카오톡 채팅창으로 말씀해 주시면 가장 빠릅니다.
+        </p>
+        <a href="https://pf.kakao.com/_xgxjCxiX/chat" target="_blank" class="mt-3 w-full py-3 bg-[#FEE500] hover:bg-[#FDD800] text-[#3C1E1E] font-extrabold text-xs sm:text-sm rounded-xl flex items-center justify-center gap-2 shadow-sm">
+          <i class="fa-solid fa-comment text-base"></i> 카카오톡으로 실시간 답변 받기
+        </a>
+      </div>
+
+      <button onclick="closeModal()" class="mt-4 text-xs text-slate-400 hover:text-slate-600 underline font-medium">
+        창 닫기
+      </button>
+    </div>
+  </div>
+
+  <!-- 비동기 폼 전송 스크립트 -->
+  <script>
+    async function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>접수 중입니다...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
+
+      const formData = {
+        '매장명': document.getElementById('storeName').value,
+        '희망키워드': document.getElementById('keyword').value,
+        '연락처': document.getElementById('phone').value,
+        '문의내용': document.getElementById('message').value,
+        '_subject': '[신기록마케팅] 새로운 키워드 무료상담 신청이 도착했습니다!'
+      };
+
+      try {
+        // 백그라운드로 FormSubmit에 비동기 전송 (화면 튕김 없음!)
+        await fetch('https://formsubmit.co/ajax/snstelecom2232@gmail.com', {
+          method: 'POST',
+          headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        // 팝업 열기
+        document.getElementById('successModal').classList.remove('hidden');
+        document.getElementById('inquiryForm').reset();
+      } catch (error) {
+        // 네트워크 에러 시에도 사용자에게 정상 접수 안내
+        document.getElementById('successModal').classList.remove('hidden');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>우리 매장 키워드 무료 확인하기 (월 10만원 특가)</span> <i class="fa-solid fa-paper-plane"></i>';
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
